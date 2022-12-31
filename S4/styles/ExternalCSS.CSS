@@ -1,0 +1,39 @@
+p{
+    color: blue;
+    background-color: red;
+}
+
+h1{
+    text-align: center;
+    color:blueviolet;
+}
+body{
+    background-color: rgb(234, 164, 234);
+}
+
+#parrafo1{
+    background-color: aquamarine;
+}
+
+.clase_ejemplo{
+    background-color: beige;
+}
+
+input[checked]{
+    height: 25px;
+    width: 25px;
+}
+
+input[name="text1"]{
+    background-color: rgb(208, 255, 127);
+    border-radius: 10px;
+
+}
+
+/**--Todos los que incien con ciertos caracteres-*/
+
+input[random_atributo^="obl_"]{
+    background-color: aquamarine;
+    border-radius: 10px;
+    border-color: blue;
+}

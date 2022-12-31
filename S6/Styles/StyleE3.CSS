@@ -1,0 +1,33 @@
+body{
+    background-color: antiquewhite;
+}
+
+div{
+    padding: 10px;
+    border: 3px dashed red;
+    margin: 15px;
+}
+
+#div1{
+    background-color: lightblue;
+}
+
+#div1:hover{
+    background-color: rgb(214, 113, 214);
+    border: 6px dashed yellow;
+}
+
+#div2{
+    background-color: rgb(241, 187, 237);
+    position: absolute;
+    left:150px;
+    top: 170px;
+    z-index: 1;
+}
+
+#div3{
+    background-color: lightseagreen;
+    position:fixed;
+    left: 110px;
+    top:200px;
+}

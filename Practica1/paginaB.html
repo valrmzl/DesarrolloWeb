@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Página B</title>
+    <link rel="stylesheet" href="Style/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <title>Práctica 1 Val</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-expand-sm navbar-light" style="background-color:rgb(176, 221, 232);">
+      <ul class="navbar-nav mt-2">
+        <li class="nav-item ">
+          <a class="nav-link"  href="Home.html">
+              <img src="Img/icono.png" alt="Logo" style="width:40px;">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="paginaA.html">Página A</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Página B</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Usuarios.html">Ver usuarios</a>
+        </li>
+      </ul> 
+      <ul class="navbar-nav ml-auto mt-2">
+        <li class="nav-item">
+          <a class="nav-link " href="#" data-toggle="modal" data-target="#crearCuentaM">
+            <i class="fa fa-user"></i>
+            Crear cuenta
+            </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#iniciarSesioM">
+            <i class="fa fa-sign-in"></i>
+            Iniciar sesión
+          </a>
+        </li>
+      </ul>
+      
+  </nav>
+
+<!--Modal formulario de inicar seisón-->
+<div class="modal fade" id="iniciarSesioM" role="dialog">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h4 class="modal-title"><b>Iniciar sesión</b></h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <!--cuerpo modal-->
+          <div class="modal-body">
+              <form>
+                  <div class="form-group">
+                    <label for="email"><b>Email:</b></label>
+                    <!--Agregar icon en la caja del correo-->
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                      </div>
+                      <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" name="email">
+                    </div>
+                  </div>
+                  <!--Agregar icon en la caja del correo-->
+                  <div class="form-group">
+                    <label for="pwd"><b>Contraseña:</b></label>
+
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                      </div>
+                      <input type="password" class="form-control" id="pwd" placeholder="Ingresa tu contraseña" name="pswd">
+                    </div>
+                  </div>
+                  <div class="form-group form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" name="remember">Recordar usuario
+                    </label>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary" onclick="javascript:alert('Se inicio sesión')">Iniciar sesión</button>
+                  
+                  <br>
+                  ¿No tienes cuenta? <a href="#" data-toggle="modal" data-target="#crearCuentaM" >
+                    Registrate aquí</a>
+                </form>
+
+          </div>
+          <!--modal footer-->
+          <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+          </div>
+
+      </div>
+  </div>
+</div>
+
+<!--Modal formulario de Crear cuenta-->
+<div class="modal fade" id="crearCuentaM" role="dialog">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h4 class="modal-title"><b>Registrar usuario</b></h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <!--cuerpo modal-->
+          <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <!--Campo del nombre-->
+                  <input type="text" class="form-control" id="Nombre" placeholder="Ingresa tu nombre" name="nombre">
+                </div>
+                
+                <!--Campo del apellido-->
+                <div class="form-group">
+                  <input type="text" class="form-control" id="Apellido" placeholder="Ingresa tu apellido" name="apellido">
+                </div>
+
+                <!--Campo del Correo-->
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" placeholder="Tu correo" name="email">
+                </div>
+
+                <!--Crear contraseña-->
+                <div class="form-group">
+                  <input type="password"  class="form-control" id="pwd" placeholder="Contraseña" name="pswd"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                </div>
+
+                <!--Confirmar contraseña-->
+
+                <div class="form-group">
+                  <input type="password"  minlength="6" class="form-control" id="pwd" placeholder="Confirmar contraseña" name="pswd"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                </div>
+
+                <!--Fecha de nacimiento-->
+                <!--La ultima fecha a aceptar es 2004, se necesita ir mayor de edad-->
+                <div class="form-group">
+                  <input type="date" class="form-control" id="nacimiento" placeholder="Fecha de nacimiento" name="nacimiento"
+                  min="2004-12-31">
+                </div>
+                <!--Seleccionar sexo-->
+                <input type="radio" name="test" value="t1"> Hombre<br>
+                <input type="radio" name="test" value="t2"> Mujer<br>
+
+                <!--url de una imagen-->
+                <div class="form-group">
+                  <input type="url" class="form-control" id="urlimage" placeholder="URL de una imagen" name="urlimage"
+                  min="2004-12-31">
+                </div>
+              </form>
+              <button type="submit" class="btn btn-success " onclick="javascript:alert('Se registro el usuario')"data-dismiss="modal" >Registrarse</button>
+            <!-- Boton de cerrar -->
+           <button type="button" class="btn btn-light " data-dismiss="modal" >Cerrar</button></button>
+          </div>
+        
+          
+      </div>
+  </div>
+</div>
+
+
+
+  
+
+    
+
+
+
+
+
+
+
+    
+  
+    <h1>Página B</h1>
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

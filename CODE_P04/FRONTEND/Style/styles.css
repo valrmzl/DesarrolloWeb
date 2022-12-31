@@ -1,0 +1,66 @@
+
+
+
+/*estilos para formularios*/
+.nav-link.active{
+    background-color: rgb(234, 190, 240);
+}
+
+#botonBuscar{
+    position: relative;
+    left: 700px;
+    bottom: 1px;
+}
+
+#barraBuscadora{
+    position: absolute;
+    width: 45%;
+    left: 210px;
+}
+
+
+
+.container{
+    height: 20%;
+    
+}
+
+.pagination{
+    position: absolute;
+    left: 218px; 
+}
+
+.media{
+    position: relative;
+    left: 7px;
+    width: 800px;
+    height:250px;
+    border-color: rgb(185, 179, 179);
+    border-bottom-color:rgb(185, 179, 179)  ;
+    border-width: 1px;
+    border-style:groove;
+    border-radius: 10px;
+  
+    border-width:thin;
+    
+    padding: 20px;
+
+}
+
+.media-left{
+    padding: 20px;
+}
+
+.media-right{
+
+    margin-bottom: 25px;
+   display: flex;
+   flex-direction: column;
+   padding: 1px;
+   
+}
+
+
+
+
+

@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="Style/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+     <title>Práctica 4 VALERIA RAMIREZ </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-sm navbar-light" style="background-color:rgb(176, 221, 232);">
+        <ul class="navbar-nav mt-2">
+          <li class="nav-item ">
+            <a class="nav-link active"  href="Home.html">
+                <img src="Img/icono.png" alt="Logo" style="width:40px;">
+            </a>
+          </li>
+         
+          
+          <li class="nav-item">
+            <a class="nav-link" href="Usuarios.html" >Ver usuarios</a>
+          </li>
+        </ul> 
+        <ul class="navbar-nav ml-auto mt-2">
+          <li class="nav-item">
+            <a class="nav-link " href="#ModalRegistro" data-toggle="modal" >
+              <i class="fa fa-user"></i>
+              Crear cuenta
+              </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ModalLogin" data-toggle="modal" >
+              <i class="fa fa-sign-in"></i>
+              Iniciar sesión
+            </a>
+          </li>
+        </ul>
+        
+    </nav>
+
+    
+
+
+    <!--Modal formulario de Crear cuenta-->
+    <div class="modal fade" id="ModalRegistro" role="dialog">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title"><b>Registrar usuario</b></h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <!--cuerpo modal-->
+              <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <!--Campo del nombre-->
+                      <input type="text" class="form-control" id="NombreRegistro" placeholder="Ingresa tu nombre" name="nombre">
+                    </div>
+                    
+                    <!--Campo del apellido-->
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="ApellidoRegistro" placeholder="Ingresa tu apellido" name="apellido">
+                    </div>
+  
+                    <!--Campo del Correo-->
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="CorreoRegistro" placeholder="Tu correo" name="email">
+                    </div>
+  
+                    <!--Crear contraseña-->
+                    <div class="form-group">
+                      <input type="password"  class="form-control" id="PasswordRegistro" placeholder="Contraseña" name="pswd"
+                      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                    </div>
+  
+                    <!--Confirmar contraseña-->
+  
+                    <div class="form-group">
+                      <input type="password"  minlength="6" class="form-control" id="ConfirmPasswordRegistro" placeholder="Confirmar contraseña" name="pswd"
+                      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                    </div>
+  
+                    <!--Fecha de nacimiento-->
+                    <!--La ultima fecha a aceptar es 2004, se necesita ir mayor de edad-->
+                    <div class="form-group">
+                      <input type="date" class="form-control" id="FechaRegistro" placeholder="Fecha de nacimiento" name="nacimiento"
+                      min="2004-12-31">
+                    </div>
+                    <!--Seleccionar sexo-->
+                    
+                    <input type="radio" name="test" id="HombreRegistro" value="H"> Hombre<br>
+                    <input type="radio" name="test"  id="MujerRegistro" value="M"> Mujer<br><br>
+  
+                    <!--url de una imagen-->
+                    <div class="form-group">
+                      <input type="url" class="form-control" id="URLRegistro" placeholder="URL de una imagen" name="urlimage"
+                      min="2004-12-31">
+                    </div>
+                  </form>
+                  <button  class="btn btn-success " onclick="RegistrarUsuario()"" >Registrarse</button>
+                <!-- Boton de cerrar -->
+               <button type="button" class="btn btn-light " data-dismiss="modal" id="submit" " >Cerrar</button></button>
+              </div>
+            
+              
+          </div>
+      </div>
+  </div>
+
+  
+
+    <!--Carrusel-->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+      
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img  class="w-100" src="Img/c1.jpg" alt="Los Angeles" width="1100" height="500">
+        </div>
+        <div class="carousel-item">
+          <img class="w-100" src="Img/c2.png" alt="Chicago" width="1100" height="500">
+        </div>
+        <div class="carousel-item">
+          <img class="w-100" src="Img/c3.jpg" alt="New York" width="1100" height="500">
+        </div>
+      </div>
+      
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+    <!--Jumbotron-->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1>Práctica 1 </h1> 
+        <h1>Valeria Ramírez </h1>
+        <br>       
+        <p>Este es un textito.</p>
+        <p>Este es otro textito</p>
+      </div>
+    </div>
+
+
+
+     <!--MODAL DE INICIAR SESION-->
+     <div class="modal fade" id="ModalLogin" role="dialog"aria-labelledby="modelTitleId" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title"><b>Iniciar sesión</b></h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;
+                  </button>
+              </div>
+              <!--cuerpo del modal-->
+              <form>
+                  <div id="alerts"></div>
+                  <div class="modal-body">
+                      <div class="container-fluid">
+                          <div class="form-group">
+                              <label for="Login""><b>Correo</b></label>
+                              <div class="input-group mb-3">
+                                  <div class="input-group-prepend">
+                                      <span class="input-group-text" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                  </div>
+                                  <input type="email" class="form-control" name="Correo" id="LoginCorreo" aria-describedby="emailHelpId"
+                                  placeholder="Ingresa tu correo" required>
+                              </div>
+
+                          </div>
+                          <!--segundo form group-->
+                          <div class="form-group">
+                              <label for="Password"><b>Contraseña:</b></label>
+                              <div class="input-group mb-3">
+                                  <div class="input-group-prepend">
+                                      <span class="input-group-text" id="basic-addon1"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                                  </div>
+                                  <input type="password" name="Contraseña" id="LoginPassword" class="form-control" placeholder="Ingera tu contraseña" required>
+                              </div>
+                              <!--recordar usuario-->
+                              <div class="form-group form-check">
+                                  <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" name="remember">Recordar usuario
+                                  </label>
+                              </div>
+                              <button class="btn btn-primary" onclick="login()">Iniciar sesión</button>
+                              <br> <br>
+
+                              ¿No tienes cuenta? <a href="#" data-toggle="modal" data-target="#ModalRegistro" data-dismiss="modal">
+                                  Registrate aquí</a>
+                          </div>
+                      </div>
+                  </div>
+                  <!--modal footer-->
+          <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+          </div>
+              </form>
+          <div>
+      <div>
+      </div>
+    </div>
+    
+
+    
+    <script src="users.js"></script>
+        
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

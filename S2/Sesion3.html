@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularios Val</title>
+
+    </head>
+    <body>
+        <h1>Formularios</h1>
+        <form action="">
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" name="name">
+            <br>
+
+            <label for="apellido">Apellido:</label>
+            <input id="apellido" type="text" name="apellido">
+            <br>
+
+            <label for="comentarios">Comentarios:</label> <br>
+            <textarea name="comentarios" rows="5" cols="40">Valor por defecto de texto grande</textarea>
+            <br>
+
+            <input type="submit" value="Guardar">
+        </form>
+
+        <h1>Tipos de input</h1>
+        Usuario:
+        <form>
+            <input type="text" name="usuario" id="name"><br>
+            Contraseña:
+            <input type="password" name="password" id="psw"><br>
+            Número:
+            <input type="number" name="cantidad" min="1" max="13"><br>
+            Correo:
+            <input type="email" name="email" id="mail"><br>
+            Archivo:
+            <input type="file" name="myFile" id="file"><br>
+            Color: 
+            <input type="color" name="miColor" value="#0000ff" > <br> 
+            Fecha:
+            <input type="date" name="fecha" value="2019-01-21"> <br>
+            Mes: 
+            <input type="month" name="mes"> <br> 
+            Hora: 
+            <input type="time" name="hora"> <br>
+            Checkboxes:<br>
+            <input type="checkbox" name="chbx1" value="chk1"> 
+            Checkbox 1 
+            <input type="checkbox" name="chbx2" value="chk2"> 
+            Checkbox 2 
+            <input type="checkbox" name="chbx3d" value="chk3"  checked> 
+            Checkbox 3
+            <br>
+            Radios: <br>
+            <input type="radio" name="test" value="t1"> 
+            Radio 1 <br> 
+            <input type="radio" name="test" value="t2" checked> 
+            Radio 2
+            <br>
+            Rango: 
+            <input type="range" name="points" min="0" max="10"> <br> 
+            Botón: 
+            <input type="button" value="Pícale" onclick="alert('Hola mundo!');"> <br>
+            Selector:<br>
+            <select name="select">
+            <option value="opc1">Opción 1</option>
+            <option value="opc2" selected>Opción 2</option>
+            <option value="opc3">Opción 3</option>
+            <option value="opc4">Opción 4</option>
+            </select>
+            <br>
+            Imagen: (convierte la imagen en botón de submit) : <br>
+            <input type="image" src="Img/fondo.jpg" alt="Submit" width="50"><br>
+        </form>
+        <h1>Ejemplos de iframes</h1>
+        <iframe
+            width="560"
+            height="315"
+            frameborder="50"
+            src="https://www.youtube.com/embed/4VaqA-5aQTM"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture in picture"
+            allowfullscreen
+        >
+        </iframe>
+
+        <br>
+        <iframe
+            width="560"
+            height="315"
+            src="Files/Database Systems  A Pragmatic Approach (Elvis C. Foster Shripad Godbol) (z-lib.org).pdf"
+        >
+
+        </iframe>
+
+        <h1>Ejemplo de objetos</h1>
+        <object
+            type="application/pdf"
+            data="Files/Database Systems  A Pragmatic Approach (Elvis C. Foster Shripad Godbol) (z-lib.org).pdf"
+            width="800"
+            height="600"
+        
+        >
+
+        </object>
+        
+
+        
+
+    </body>
+</html>

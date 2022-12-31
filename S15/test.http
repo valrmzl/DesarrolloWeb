@@ -1,0 +1,18 @@
+
+//request a jasonplaceholder/users
+GET https://jsonplaceholder.typicode.com/users/100
+
+//request a un usuario en especifico
+GET https://jsonplaceholder.typicode.com/users/10
+
+//request a un usuario que no existe
+GET https://jsonplaceholder.typicode.com/users/100
+
+POST https://jsonplaceholder.typicode.com/users HTTP/1.1
+content-type: application/json
+{
+    "name": "valeria",
+    "username": "valrmzl"
+}
+
+

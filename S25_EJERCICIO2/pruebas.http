@@ -1,0 +1,34 @@
+GET http://localhost:3000/
+
+###POST
+POST http://localhost:3000/api/users/
+Content-Type: application/json
+
+  {
+    "nombre": "Valeria",
+    "correo": "vale@gmail.com",
+    "pass": "hdiuefhi",
+    "edad": 20,
+    "sexo": "M"
+  }
+
+###
+GET http://localhost:3000/api/users?nombre=J
+
+
+###POST
+PUT http://localhost:3000/api/users/
+Content-Type: application/json
+
+  {
+    "id":"63690b82ae10e873fa58f5bc",
+    "nombre": "CINTHYA LORENA"
+  }
+
+###POST
+DELETE http://localhost:3000/api/users/
+Content-Type: application/json
+
+  {
+    "id":"63690b82ae10e873fa58f5bc"
+  }

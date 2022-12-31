@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Valeria",
+        "email": "valeria@gamil.com",
+        "edad": 20,
+        "sexo": "M"
+    },
+    {
+        "id": 2,
+        "name": "Ana",
+        "email": "ana@gamil.com",
+        "edad": 20,
+        "sexo": "M"
+
+    },
+    {
+        "id": 3,
+        "name": "Cinthya",
+        "email": "cinthya@gamil.com",
+        "edad": 20,
+        "sexo": "M"
+
+    }
+
+]

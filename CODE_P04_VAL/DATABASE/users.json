@@ -1,0 +1,8 @@
+[{"uid":2,"nombreC":"Lupita","correo":"valeriaRamirez@gmail.com",
+"password":"vale","fecha":"2012-11-31",
+"sexo":"M","imagen":"https://randomuser.me/api/portraits/women/55.jpg",
+"token":"N4e1BFxE1y-2"},
+{"uid":5,"nombreC":"Julian Ramirez","correo":"julian_ramirez@jabil.com",
+"password":"julian123","fecha":"1974-06-03",
+"sexo":"H","imagen":"https://randomuser.me/api/portraits/men/95.jpg",
+"token":"GQmfvdFFFK-5"},{"uid":6,"nombreC":"Natalia Delgado","correo":"nat@gamil.com","password":"natalia1","fecha":"2002-03-27","sexo":"M","imagen":"https://randomuser.me/api/portraits/women/92.jpg"},{"uid":7,"nombreC":"so d","correo":"jd@gmail.com","password":"mmm","fecha":"2022-11-05","sexo":"H","imagen":"https://randomuser.me/api/portraits/men/55.jpg"},{"uid":9,"nombreC":"Yeya Ramirez","correo":"yeya@gmail.com","password":"yeya1","fecha":"2022-11-05","sexo":"M","imagen":"https://randomuser.me/api/portraits/women/60.jpg"},{"uid":10,"nombreC":"ana lopez","correo":"ana@gmail.com","password":"ana1","fecha":"2022-11-18","sexo":"M","imagen":"https://randomuser.me/api/portraits/women/10.jpg"}]

@@ -1,0 +1,78 @@
+h1{
+    text-align: center;
+    text-decoration: line-through;
+    color:orange
+    
+}
+
+ul{
+    list-style-type: none;
+}
+
+#first{
+    letter-spacing: 20px;
+}
+
+.par_italica_centrado{
+    text-align: center;
+    font-style: italic;
+    background-color: blanchedalmond;
+    color:aqua;
+}
+
+.big_text_italica{
+    font-style: italic;
+    font-size: 30px;
+}
+
+.par{
+    background-color: blanchedalmond;
+    color:aqua;
+}
+
+.sombreado_centrado{
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+}
+
+.par_big_text_underlined{
+    background-color: blanchedalmond;
+    text-decoration: underline;
+    font-size: 40px;
+    color: aqua;
+}
+
+form{
+    color: blue;
+}
+
+input[obligatorio]{
+    border-color:red;
+}
+.redondo{
+    border-radius: 10px;
+}
+
+.remarcado{
+    border-color:blue;
+    padding: 20px;
+
+}
+
+button{
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    
+}
+
+input:out-of-range{
+    background-color: rgb(226, 88, 91);
+    border-color:red;
+    
+}
+
+input:hover{
+    background-color: lightblue;
+}

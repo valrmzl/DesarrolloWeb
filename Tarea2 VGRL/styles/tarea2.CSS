@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(224, 246, 169);
+}
+table{
+    background-color: black;
+    text-align: center;
+}
+
+th{
+    background-color: rgb(246, 246, 161);
+}
+th:hover{
+    background-color: rgb(113, 236, 168);
+}
+
+tr:first-child{
+    background-color: blueviolet;
+    font-family: cursive; 
+}
+
+
+
+
+tr:nth-child(even){
+    background-color: rgb(143, 237, 240);
+}
+tr:nth-child(odd){
+    background-color: rgb(222, 129, 222);
+}
+td:hover{
+    background-color: rgb(113, 236, 168);
+}
+
+
+
+.redondo{
+    border-radius: 10px;
+    border-color: rgb(237, 52, 221);
+}
+
+button{
+    background-color: rgb(217, 173, 255);
+    border: none;
+    font-size: large;
+    color: blue;
+    padding: 30px;
+}
+
+#b1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+#b2{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+input[type=checkbox]:checked{
+    box-shadow: 0 0 0 4px hotpink;
+}
+
+input[type=email]{
+    border-radius: 10px;
+    background-color: rgb(161, 229, 241);
+}
+input[type=email]:invalid{
+    background-color: red;
+}
